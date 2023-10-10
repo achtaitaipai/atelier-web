@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="https://fav.farm/%F0%9F%8C%90" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club-Web</title>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h3>👋 Bonjour html</h3>
+      </section>
+      <section>
+        <section data-transition="slide-in fade-out">
+          <h3>Qu'est-ce que c'est une page web ?</h3>
+          <label class="with-checkbox"><input type="checkbox">Un fichier texte que le navigateur est capable de
+            lire</label>
+          <label class="with-checkbox"><input type="checkbox">Un type de papier qu'on ne trouve que dans des livres très
+            anciens</label>
+          <label class="with-checkbox"><input type="checkbox">Un truc très compliqué</label>
+        </section>
+        <section data-transition="fade-in slide-out">
+          <h3>Qu'est-ce que c'est une page web ?</h3>
+          <label class="with-checkbox"><input type="checkbox" checked>Un fichier texte que le navigateur est capable de
+            lire</label>
+          <label class="with-checkbox"><input type="checkbox">Un type de papier qu'on ne trouve que dans des livres très
+            anciens</label>
+          <label class="with-checkbox"><input type="checkbox">Un truc très compliqué</label>
+        </section>
+      </section>
+
+      <section>
+        <section data-transition="slide-in fade-out">
+          <h3>Pour créer ces pages web, quelle extension faut-il utiliser ?</h3>
+          <label class="with-checkbox"><input type="checkbox"><code>.truc</code></label>
+          <label class="with-checkbox"><input type="checkbox"><code>.html</code></label>
+          <label class="with-checkbox"><input type="checkbox"><code>.jpg</code></label>
+        </section>
+
+        <section data-transition="fade-in slide-out">
+          <h3>Pour créer ces pages web, quelle extension faut-il utiliser ?</h3>
+          <label class="with-checkbox"><input type="checkbox"><code>.truc</code></label>
+          <label class="with-checkbox"><input type="checkbox" checked><code>.html</code></label>
+          <label class="with-checkbox"><input type="checkbox"><code>.jpg</code></label>
+        </section>
+      </section>
+
+
+      <section>
+        <h3>Un peu de code!</h3>
+        <p class="fragment">Les éléments html sont un peu comme des boîtes dans lesquels on met du contenu. Le code
+          ressemble à ceci : </p>
+
+        <pre class="fragment"><code><script type="text/template">
+<typedeboite>Contenu de la boite</typedeboite>
+        </script></code></pre>
+      </section>
+      <section>
+        <p>Le code précédent ne fonctionne pas bien-sûr.
+          Voici comment coder un vrai paragraphe.
+        </p>
+        <pre class="fragment"><code><script type="text/template">
+          <p>Bonjour internet</p>
+                  </script></code></pre>
+        <p class="fragment">
+          <b>&lt;p&gt;</b> c'est la balise ouvrante.
+        </p>
+        <p class="fragment">
+          <b>&lt;/p&gt;</b> c'est la balise fermante.
+        </p>
+        <p class="fragment">
+          <b>Bonjour internet</b> C'est le contenu
+        </p>
+        <p class="fragment">L'ensemble forme un <b>élément Html</b> </p>
+      </section>
+
+      <section>
+        <section data-transition="slide-in fade-out">
+          <h3>Peut-on mettre des éléments dans un autre élément ?</h3>
+          <label class="with-checkbox"><input type="checkbox">oui</label>
+          <label class="with-checkbox"><input type="checkbox"><code>non</code></label>
+        </section>
+
+        <section data-transition="fade-in slide-out">
+          <h3>Peut-on mettre des éléments dans un autre élément ?</h3>
+          <label class="with-checkbox"><input type="checkbox" checked>oui</label>
+          <label class="with-checkbox"><input type="checkbox"><code>non</code></label>
+        </section>
+      </section>
+
+      <section>
+        <p>Tout à fait! comme on peut mettre des boîtes dans des boîtes, on peut imbriquer des élément
+          html.</p>
+        <p class="fragment">Par exemple
+          l'élément pour faire ressortir du texte s'appelle <code>b</code>. Pour faire ressortir un morceau de texte
+          dans un paragraphe on écrira :</p>
+
+        <pre class="fragment"><code><script type="text/template">
+<p>
+  J'aime les <b>éléphants</b>
+</p>
+        </script></code></pre>
+        <p class="fragment">
+          ☝️<i>En html les sauts de lignes n'ont pas d'importance.</i>
+        </p>
+      </section>
+
+      <section>
+        <section>
+          <p>L'élément pour créer un lien s'appelle <code>a</code>.</p>
+          <pre class="fragment"><code><script type="text/template">
+            <p>
+              Voici un super <a>lien</a>
+            </p>
+                    </script></code></pre>
+
+          <p class="fragment">🧐 Mais comment le navigateur saura ou doit renvoyer le lien?</p>
+        </section>
+
+        <section>
+          <p>On a besoin d'un <code>attribut</code>!</p>
+          <p class="fragment">Les attributs servent à ajouter des précisions
+            au navigateur sur comment un élément doit fonctionner</p>
+
+          <p class="fragment">L'attribut pour l'url d'un lien s'appelle href.<br> Pour créer un lien vers google :</p>
+          <pre class="fragment"><code><script type="text/template">
+  <p>
+    Voici un super <a href="https://google.com">lien</a>
+  </p>
+                    </script></code></pre>
+        </section>
+      </section>
+
+      <section>
+        <p>Pour une image l'élément s'appelle <code>img</code> et l'attribut pour préciser le lien vers l'image
+          s'appelle <code>src</code> ce qui nous donne :</p>
+        <pre class="fragment"><code><script type="text/template">
+<img src="image.jpg" >
+                              </script></code></pre>
+      </section>
+
+      <section>
+        <h3>Anti-sèche</h3>
+        <p>Impossible de retenir le nom de tous les éléments html. Voici une <a
+            href="https://developer.mozilla.org/fr/docs/Learn/HTML/Cheatsheet" target="_blank">page</a> avec les
+          éléments les plus
+          utilisés!</p>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
