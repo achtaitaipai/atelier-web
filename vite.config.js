@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         intro: resolve(__dirname, "bonjour-html/index.html"),
+        intro: resolve(__dirname, "un-peu-de-style/index.html"),
       },
     },
   },
