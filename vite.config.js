@@ -1,15 +1,16 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import { globby } from "globby";
+
+const paths = await globby("**/index.html", {
+  ignore: ["dist/**", "node_modules/**"],
+});
 
 export default defineConfig({
   base: "/atelier-web/",
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        intro: resolve(__dirname, "bonjour-html/index.html"),
-        intro: resolve(__dirname, "un-peu-de-style/index.html"),
-      },
+      input: paths.map((p) => resolve(__dirname, p)),
     },
   },
 });

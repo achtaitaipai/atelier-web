@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://fav.farm/%F0%9F%8C%90" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club-Web</title>
+  <script type="module" crossorigin src="/atelier-web/assets/main-33c25b9a.js"></script>
+  <link rel="stylesheet" href="/atelier-web/assets/main-9cc5d991.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>💅 Un peu de style</h1>
+                <p class="fragment">
+                    Vous savez maintenant comment coder le contenu d'une page web. Pour l'instant c'est le
+                    navigateur
+                    qui décide de l'apparence de la page.
+                </p>
+            </section>
+            <section>
+                <pre><code data-line-numbers="1-3|5-9|1-9">
+<script type="text/template"><p>
+    J'aime les éléphants
+</p>
+
+<style>
+    p:{
+        color:red;
+    }
+</style></script></code></pre>
+                <h2 class="fragment">👋 Bonjour css</h2>
+            </section>
+
+            <section>
+                <section data-transition="slide-in fade-out">
+                    <h3>À votre avis, qu'est-ce que le <code>Css</code> ?</h3>
+                    <label class="with-checkbox"><input type="checkbox">Un langage.</label>
+                    <label class="with-checkbox"><input type="checkbox">Une marque</label>
+                </section>
+
+                <section data-transition="fade-in slide-out">
+                    <h3>À votre avis, qu'est-ce que le <code>Css</code> ?</h3>
+                    <label class="with-checkbox"><input type="checkbox" checked>Un langage.</label>
+                    <label class="with-checkbox"><input type="checkbox">Une marque</label>
+                </section>
+            </section>
+
+            <section>
+                <p>Le css est un des langages principaux du web. Il permet de dire au navigateur comment afficher nos
+                    éléments.</p>
+                <p class="fragment">Pour ajouter du css dans un fichier <code>html</code> il y a plusieurs méthodes.
+                    L'une de ces méthodes et d'ajouter un éléments <code>style</code>. À l'intérieur de cet élément on
+                    pourra coder en css!</p>
+            </section>
+
+
+            <section>
+                <section>
+                    <h2>SANS CSS</h2>
+                    <div class="two-cols">
+
+                        <pre><code>
+<script type="text/template"><p>
+    J'aime les <b>éléphants</b>
+</p>
+</script>
+                </code></pre>
+                        <img src="/atelier-web/example1.png" alt="">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Avec CSS</h2>
+                    <div class="two-cols">
+
+                        <pre><code>
+<script type="text/template"><p>
+J'aime les <b>éléphants</b>
+</p>
+
+<style>
+p{
+    color:pink;
+}
+b{
+    text-transform:uppercase;
+    background-color:black;
+}
+</style>
+</script>
+                </code></pre>
+                        <img src="/atelier-web/example2.png" alt="">
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section data-transition="slide-in fade-out">
+                    <h3>À quelle ligne se trouve le <code>sélecteur</code> ?</h3>
+                    <pre><code data-line-numbers>
+<script type="text/template"> p{
+        color:pink;
+    }</script>
+                    </code></pre>
+                    <label class="with-checkbox"><input type="checkbox">ligne 1</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 2</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 3</label>
+                </section>
+
+                <section data-transition="fade-in slide-out">
+                    <h3>À quelle ligne se trouve le <code>sélecteur</code> ?</h3>
+                    <pre><code data-line-numbers="1">
+<script type="text/template"> p{
+        color:pink;
+    }</script>
+                    </code></pre>
+                    <label class="with-checkbox"><input type="checkbox" checked>ligne 1</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 2</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 3</label>
+                    <p class="fragment">
+                        Le sélecteur permet de dire quels éléments on veut styliser.
+                        Ici on précise qu'on veut styliser les éléments <code>p</code>.
+                    </p>
+                </section>
+            </section>
+
+
+            <section>
+                <section data-transition="slide-in fade-out">
+                    <h3>À quelle ligne se trouve la règle ?</h3>
+                    <pre><code data-line-numbers>
+<script type="text/template"> p{
+        color:pink;
+    }</script>
+                    </code></pre>
+                    <label class="with-checkbox"><input type="checkbox">ligne 1</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 2</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 3</label>
+                </section>
+
+                <section data-transition="fade-in slide-out">
+                    <h3>À quelle ligne se trouve la règle ?</h3>
+                    <pre><code data-line-numbers="2">
+<script type="text/template"> p{
+        color:pink;
+    }</script>
+                    </code></pre>
+                    <label class="with-checkbox"><input type="checkbox">ligne 1</label>
+                    <label class="with-checkbox"><input type="checkbox" checked>ligne 2</label>
+                    <label class="with-checkbox"><input type="checkbox">ligne 3</label>
+                    <p class="fragment">
+                        La <code>règle</code> permet de dire comment le navigateur doit styliser
+                        notre élément. Elle est constituée de deux parties : la propiété à modifier et la valeur qu'on
+                        veut donner à cette propriété!
+                    </p>
+                </section>
+            </section>
+
+            <section>
+                <h3>À quoi ressemblera cette page ?</h3>
+                <pre><code>
+    <script type="text/template"><h1>Mon site</h1>
+<p>Bonjour</p>
+
+<style>
+    p{
+        color:green;
+    }
+</style>    
+    </script>
+                        </code></pre>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Comment faire pour que ce soit le titre qui s'affiche en vert ?</h3>
+                    <pre><code>
+    <script type="text/template"><h1>Mon site</h1>
+<p>Bonjour</p>
+
+<style>
+    p{
+        color:green;
+    }
+</style>    
+    </script>
+                        </code></pre>
+                </section>
+                <section>
+                    <pre><code>
+    <script type="text/template"><h1>Mon site</h1>
+<p>Bonjour</p>
+
+<style>
+    h1{
+        color:green;
+    }
+</style>    
+    </script>
+                        </code></pre>
+                </section>
+            </section>
+
+
+            <section>
+                <section>
+                    <h3>Comment faire pour que le titre s'affiche en orange ?</h3>
+                    <pre><code>
+    <script type="text/template"><h1>Mon site</h1>
+<p>Bonjour</p>
+
+<style>
+    h1{
+        color:green;
+    }
+</style>    
+    </script>
+                        </code></pre>
+                </section>
+                <section>
+                    <pre><code>
+    <script type="text/template"><h1>Mon site</h1>
+<p>Bonjour</p>
+
+<style>
+    h1{
+        color:orange;
+    }
+</style>    
+    </script>
+                        </code></pre>
+                </section>
+            </section>
+
+
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
